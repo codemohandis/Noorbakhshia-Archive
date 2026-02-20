@@ -148,7 +148,7 @@
         aria-valuemin={0}
         aria-valuemax={100}
         aria-valuenow={displayProgress}
-        aria-label="Playback progress"
+        aria-label="Playback progress - click or drag to seek"
         tabindex="0"
       >
         <div class="w-full h-1.5 bg-dark-border rounded-full overflow-hidden group-hover:h-2 transition-all">
@@ -166,7 +166,7 @@
 
       <!-- Time Labels -->
       <div class="flex justify-between text-xs text-text-secondary mt-1">
-        <span>{$formattedCurrentTime}</span>
+        <span class="cursor-pointer hover:text-text-primary transition-colors" title="Click on progress bar to seek">{$formattedCurrentTime}</span>
         <span>{$formattedDuration}</span>
       </div>
     </div>

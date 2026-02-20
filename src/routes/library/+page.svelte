@@ -64,7 +64,7 @@
                   {#if count > 1}
                     {$tr('collection.topics', { count })}
                   {:else if count === 1}
-                    {$tr('collection.lecture')}
+                    {$tr('collection.topic')}
                   {:else}
                     {$tr('collection.noTopics')}
                   {/if}
