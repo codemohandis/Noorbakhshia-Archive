@@ -1,42 +1,122 @@
-# sv
+# Archivist N365
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A progressive web application for searching and streaming historical audio content from Archive.org. Access decades of audio without internet connectivity using service worker caching and offline support.
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+- **Search Archive.org**: Browse collections of historical audio, music, and spoken word content
+- **Stream and Cache**: Progressive download with service worker caching for offline playback
+- **Offline Support**: Full PWA support with service worker for browsing cached content without internet
+- **Mobile Ready**: Responsive design optimized for all devices
+- **Production Ready**: Fast, type-safe builds with SvelteKit and TypeScript
 
-```sh
-# create a new project
-npx sv create my-app
-```
+## Quick Start
 
-To recreate this project with the same configuration:
+### Prerequisites
+- Node.js 18 or later
+- npm, yarn, or pnpm
 
-```sh
-# recreate this project
-npx sv create --template minimal --types ts --install npm .
-```
+### Local Development
 
-## Developing
+```bash
+# Install dependencies
+npm install
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
+# Start development server
 npm run dev
 
-# or start the server and open the app in a new browser tab
+# Open in browser
 npm run dev -- --open
 ```
 
-## Building
+### Building for Production
 
-To create a production version of your app:
-
-```sh
+```bash
+# Create optimized production build
 npm run build
+
+# Preview production build locally
+npm run preview
 ```
 
-You can preview the production build with `npm run preview`.
+## Deployment
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+### Vercel Deployment
+
+The project is configured for seamless deployment to Vercel:
+
+```bash
+# Install Vercel CLI (optional)
+npm install -g vercel
+
+# Deploy to Vercel
+vercel
+```
+
+Or connect your Git repository to Vercel for automatic deployments on each push.
+
+**Configuration**: Vercel settings are defined in `vercel.json`. The project uses SvelteKit's `@sveltejs/adapter-auto` which automatically configures for Vercel.
+
+### Environment Variables
+
+No environment variables are required. The application uses the Archive.org public API endpoints directly. See `.env.example` for reference.
+
+## Project Structure
+
+```
+├── src/
+│   ├── lib/          # Reusable components and utilities
+│   ├── routes/       # SvelteKit page routes
+│   ├── app.css       # Global styles
+│   └── app.html      # Main HTML template
+├── static/           # Static assets (manifest, service worker, etc.)
+├── svelte.config.js  # SvelteKit configuration
+├── vite.config.ts    # Vite build configuration
+└── vercel.json       # Vercel deployment configuration
+```
+
+## Technology Stack
+
+- **Framework**: SvelteKit 2.x
+- **UI Framework**: Svelte 5.x with Tailwind CSS
+- **Build Tool**: Vite
+- **Type Safety**: TypeScript
+- **HTTP Client**: ky
+- **Database**: IndexedDB (idb)
+- **PWA**: @vite-pwa/sveltekit with service workers
+- **Icons**: Lucide Svelte
+
+## Development Commands
+
+- `npm run dev` - Start development server with hot module reloading
+- `npm run build` - Build optimized production bundle
+- `npm run preview` - Preview production build locally
+- `npm run check` - Type-check and lint the codebase
+- `npm run check:watch` - Type-check in watch mode
+
+## Service Worker & Offline Support
+
+The application includes a service worker that:
+- Caches audio content for offline playback
+- Enables offline browsing of previously cached data
+- Automatically manages cache invalidation and storage quotas
+- Provides network-first strategy with fallback to cache
+
+## Browser Support
+
+- Chrome/Edge 90+
+- Firefox 88+
+- Safari 14+
+- Mobile browsers supporting PWA standards
+
+## Performance
+
+- Optimized bundle size with tree-shaking
+- Lazy-loaded route components
+- Streaming responses for large audio files
+- Efficient caching strategies for offline use
+- CDN-friendly static assets
+
+## License
+
+See LICENSE file for details.
