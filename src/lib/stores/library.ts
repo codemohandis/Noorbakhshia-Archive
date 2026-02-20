@@ -274,7 +274,7 @@ function createLibraryStore() {
     },
 
     /**
-     * Search lectures
+     * Search lectures, collections, and topics
      */
     async searchLectures(query: string): Promise<Lecture[]> {
       const state = get(store);
@@ -294,6 +294,48 @@ function createLibraryStore() {
       }
 
       return results;
+    },
+
+    /**
+     * Search all content: lectures, collections, and categories
+     */
+    async searchAll(query: string): Promise<{ lectures: Lecture[]; collections: Collection[]; }> {
+      const state = get(store);
+      const queryLower = query.toLowerCase();
+      const lectureResults: Lecture[] = [];
+      const collectionResults: Collection[] = [];
+
+      // Search lectures
+      for (const lectures of state.lectures.values()) {
+        for (const lecture of lectures) {
+          if (
+            lecture.title.toLowerCase().includes(queryLower) ||
+            lecture.titleEn?.toLowerCase().includes(queryLower) ||
+            lecture.contributor.toLowerCase().includes(queryLower)
+          ) {
+            lectureResults.push(lecture);
+          }
+        }
+      }
+
+      // Search collections by title, description, and contributor
+      for (const collection of state.collections) {
+        if (
+          collection.title.toLowerCase().includes(queryLower) ||
+          collection.displayName?.toLowerCase().includes(queryLower) ||
+          collection.creator?.toLowerCase().includes(queryLower) ||
+          collection.contributor?.toLowerCase().includes(queryLower) ||
+          collection.subject?.toLowerCase().includes(queryLower) ||
+          collection.album?.toLowerCase().includes(queryLower)
+        ) {
+          collectionResults.push(collection);
+        }
+      }
+
+      return {
+        lectures: lectureResults,
+        collections: collectionResults
+      };
     },
 
     /**

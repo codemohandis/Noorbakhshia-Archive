@@ -21,8 +21,8 @@
 
   const theme = $derived(categoryEngine.getCategoryTheme(categoryId));
 
-  // Lazy loading state
-  const ITEMS_PER_PAGE = 10;
+  // Lazy loading state - show 8 items per load for better performance
+  const ITEMS_PER_PAGE = 8;
   let visibleCount = $state(ITEMS_PER_PAGE);
   let loadMoreRef: HTMLDivElement | undefined = $state();
   let observer: IntersectionObserver | undefined;

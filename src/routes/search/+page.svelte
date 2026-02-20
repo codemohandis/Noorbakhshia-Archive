@@ -5,10 +5,11 @@
   import { player } from '$lib/stores/player';
   import { tr } from '$lib/services/language-engine';
   import { metadataNormalizer } from '$lib/services/metadata-normalizer';
-  import type { Lecture } from '$lib/types';
+  import type { Lecture, Collection } from '$lib/types';
 
   let query = $state('');
-  let results = $state<Lecture[]>([]);
+  let lectureResults = $state<Lecture[]>([]);
+  let collectionResults = $state<Collection[]>([]);
   let isSearching = $state(false);
   let hasSearched = $state(false);
 
@@ -21,14 +22,17 @@
     clearTimeout(debounceTimer);
 
     if (query.length < 2) {
-      results = [];
+      lectureResults = [];
+      collectionResults = [];
       hasSearched = false;
       return;
     }
 
     isSearching = true;
     debounceTimer = setTimeout(async () => {
-      results = await library.searchLectures(query);
+      const results = await library.searchAll(query);
+      lectureResults = results.lectures;
+      collectionResults = results.collections;
       isSearching = false;
       hasSearched = true;
     }, 300);
@@ -38,9 +42,14 @@
     await player.play(lecture);
   }
 
+  function handleOpenCollection(collectionId: string) {
+    window.location.href = `/collection/${collectionId}`;
+  }
+
   function clearSearch() {
     query = '';
-    results = [];
+    lectureResults = [];
+    collectionResults = [];
     hasSearched = false;
   }
 </script>
@@ -81,47 +90,96 @@
     <div class="flex items-center justify-center py-12">
       <Icon name="Loader2" size={32} class="animate-spin text-primary" />
     </div>
-  {:else if hasSearched && results.length === 0}
+  {:else if hasSearched && lectureResults.length === 0 && collectionResults.length === 0}
     <!-- No Results -->
     <div class="text-center py-12">
       <Icon name="SearchX" size={48} class="mx-auto mb-4 text-text-secondary" />
       <p class="text-text-secondary">{$tr('search.noResults')}</p>
     </div>
-  {:else if results.length > 0}
+  {:else if lectureResults.length > 0 || collectionResults.length > 0}
     <!-- Results -->
-    <div class="space-y-2">
-      {#each results as lecture}
-        <button
-          onclick={() => handlePlayLecture(lecture)}
-          class="w-full flex items-center gap-4 p-3 rounded-xl hover:bg-dark-surface transition-colors text-start"
-        >
-          <!-- Thumbnail -->
-          <div class="w-12 h-12 rounded-lg bg-dark-border overflow-hidden flex-shrink-0">
-            {#if lecture.artwork}
-              <img src={lecture.artwork} alt="" class="w-full h-full object-cover" />
-            {:else}
-              <div class="w-full h-full flex items-center justify-center">
-                <Icon name="Music" size={20} class="text-text-secondary" />
-              </div>
-            {/if}
-          </div>
+    <div class="space-y-6">
+      <!-- Collections Section -->
+      {#if collectionResults.length > 0}
+        <div>
+          <h2 class="text-sm font-semibold text-text-secondary mb-3 flex items-center gap-2">
+            <Icon name="Folder" size={16} />
+            Collections ({collectionResults.length})
+          </h2>
+          <div class="space-y-2">
+            {#each collectionResults as collection}
+              <button
+                onclick={() => handleOpenCollection(collection.id)}
+                class="w-full flex items-center gap-4 p-3 rounded-xl hover:bg-dark-surface transition-colors text-start"
+              >
+                <!-- Icon -->
+                <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <Icon name="FolderOpen" size={20} class="text-primary" />
+                </div>
 
-          <!-- Info -->
-          <div class="flex-1 min-w-0">
-            <p
-              class="font-medium truncate"
-              dir={metadataNormalizer.isRtlText(lecture.title) ? 'rtl' : 'ltr'}
-            >
-              {lecture.title}
-            </p>
-            <p class="text-sm text-text-secondary truncate">
-              {lecture.contributor} • {lecture.durationFormatted}
-            </p>
-          </div>
+                <!-- Info -->
+                <div class="flex-1 min-w-0">
+                  <p
+                    class="font-medium truncate"
+                    dir={metadataNormalizer.isRtlText(collection.displayName || collection.title) ? 'rtl' : 'ltr'}
+                  >
+                    {collection.displayName || collection.title}
+                  </p>
+                  <p class="text-sm text-text-secondary truncate">
+                    {collection.contributor || collection.creator || 'Unknown'}
+                  </p>
+                </div>
 
-          <Icon name="Play" size={20} class="text-text-secondary flex-shrink-0" />
-        </button>
-      {/each}
+                <Icon name="ChevronRight" size={20} class="text-text-secondary flex-shrink-0" />
+              </button>
+            {/each}
+          </div>
+        </div>
+      {/if}
+
+      <!-- Lectures Section -->
+      {#if lectureResults.length > 0}
+        <div>
+          <h2 class="text-sm font-semibold text-text-secondary mb-3 flex items-center gap-2">
+            <Icon name="Music" size={16} />
+            Lectures ({lectureResults.length})
+          </h2>
+          <div class="space-y-2">
+            {#each lectureResults as lecture}
+              <button
+                onclick={() => handlePlayLecture(lecture)}
+                class="w-full flex items-center gap-4 p-3 rounded-xl hover:bg-dark-surface transition-colors text-start"
+              >
+                <!-- Thumbnail -->
+                <div class="w-12 h-12 rounded-lg bg-dark-border overflow-hidden flex-shrink-0">
+                  {#if lecture.artwork}
+                    <img src={lecture.artwork} alt="" class="w-full h-full object-cover" />
+                  {:else}
+                    <div class="w-full h-full flex items-center justify-center">
+                      <Icon name="Music" size={20} class="text-text-secondary" />
+                    </div>
+                  {/if}
+                </div>
+
+                <!-- Info -->
+                <div class="flex-1 min-w-0">
+                  <p
+                    class="font-medium truncate"
+                    dir={metadataNormalizer.isRtlText(lecture.title) ? 'rtl' : 'ltr'}
+                  >
+                    {lecture.title}
+                  </p>
+                  <p class="text-sm text-text-secondary truncate">
+                    {lecture.contributor} • {lecture.durationFormatted}
+                  </p>
+                </div>
+
+                <Icon name="Play" size={20} class="text-text-secondary flex-shrink-0" />
+              </button>
+            {/each}
+          </div>
+        </div>
+      {/if}
     </div>
   {:else}
     <!-- Initial State -->
