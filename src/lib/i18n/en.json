@@ -1,0 +1,154 @@
+{
+  "app": {
+    "name": "Dars-e-Noorbakhshia",
+    "tagline": "Islamic Audio Lectures"
+  },
+  "nav": {
+    "home": "Home",
+    "library": "Library",
+    "search": "Search",
+    "settings": "Settings",
+    "downloads": "Downloads"
+  },
+  "home": {
+    "welcome": "Welcome",
+    "featured": "Featured Collections",
+    "recentlyPlayed": "Recently Played",
+    "continueListening": "Continue Listening",
+    "browseAll": "Browse All",
+    "noRecent": "No recently played lectures"
+  },
+  "library": {
+    "title": "Library",
+    "collections": "Collections",
+    "categories": "Categories",
+    "scholars": "Scholars",
+    "downloaded": "Downloaded",
+    "bookmarks": "Bookmarks",
+    "noCollections": "No collections available",
+    "noCollectionsInCategory": "No collections in this category",
+    "noDownloads": "No downloaded lectures",
+    "filterBy": "Filtered by",
+    "showAll": "Show all collections"
+  },
+  "collection": {
+    "lectures": "{count} lectures",
+    "lecture": "1 lecture",
+    "topics": "{count} topics",
+    "topic": "1 topic",
+    "noTopics": "No topics",
+    "duration": "{duration}",
+    "scholar": "Scholar",
+    "category": "Category",
+    "downloadAll": "Download All",
+    "playAll": "Play All"
+  },
+  "lecture": {
+    "nowPlaying": "Now Playing",
+    "upNext": "Up Next",
+    "addToQueue": "Add to Queue",
+    "download": "Download",
+    "downloading": "Downloading...",
+    "downloaded": "Downloaded",
+    "bookmark": "Bookmark",
+    "share": "Share",
+    "removeDownload": "Remove Download"
+  },
+  "player": {
+    "play": "Play",
+    "pause": "Pause",
+    "skipForward": "Skip Forward",
+    "skipBackward": "Skip Backward",
+    "previous": "Previous",
+    "next": "Next",
+    "speed": "Speed",
+    "volume": "Volume",
+    "mute": "Mute",
+    "unmute": "Unmute",
+    "queue": "Queue",
+    "repeat": "Repeat",
+    "repeatOne": "Repeat One",
+    "repeatAll": "Repeat All",
+    "shuffle": "Shuffle",
+    "sleepTimer": "Sleep Timer",
+    "resumeFrom": "Resume from {time}?",
+    "resume": "Resume",
+    "startOver": "Start Over"
+  },
+  "search": {
+    "title": "Search",
+    "placeholder": "Search lectures, scholars...",
+    "noResults": "No results found",
+    "recentSearches": "Recent Searches"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "theme": "Theme",
+    "dark": "Dark",
+    "light": "Light",
+    "system": "System",
+    "playback": "Playback",
+    "playbackSpeed": "Default Playback Speed",
+    "skipDuration": "Skip Duration",
+    "autoPlay": "Auto-play Next",
+    "storage": "Storage",
+    "storageUsed": "Storage Used",
+    "clearCache": "Clear Cache",
+    "clearData": "Clear All Data",
+    "about": "About",
+    "version": "Version",
+    "credits": "Credits"
+  },
+  "download": {
+    "title": "Downloads",
+    "inProgress": "In Progress",
+    "completed": "Completed",
+    "failed": "Failed",
+    "pause": "Pause",
+    "resume": "Resume",
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "pauseAll": "Pause All",
+    "resumeAll": "Resume All",
+    "clearCompleted": "Clear Completed",
+    "storageWarning": "Low storage space. Some downloads may fail.",
+    "noSpace": "Insufficient storage space"
+  },
+  "errors": {
+    "loadFailed": "Failed to load content",
+    "networkError": "Network error. Please check your connection.",
+    "playbackError": "Playback error. Please try again.",
+    "downloadError": "Download failed. Please try again.",
+    "retry": "Retry"
+  },
+  "common": {
+    "loading": "Loading...",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "delete": "Delete",
+    "save": "Save",
+    "close": "Close",
+    "back": "Back",
+    "more": "More",
+    "less": "Less",
+    "all": "All",
+    "none": "None",
+    "yes": "Yes",
+    "no": "No",
+    "ok": "OK"
+  },
+  "time": {
+    "justNow": "Just now",
+    "minutesAgo": "{count} minutes ago",
+    "hoursAgo": "{count} hours ago",
+    "daysAgo": "{count} days ago",
+    "hours": "h",
+    "minutes": "m",
+    "seconds": "s"
+  },
+  "offline": {
+    "title": "You're Offline",
+    "message": "Some content may be unavailable. Downloaded lectures are still accessible."
+  }
+}

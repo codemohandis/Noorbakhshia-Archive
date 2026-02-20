@@ -1,0 +1,147 @@
+{
+  "app": {
+    "name": "درس النوربخشية",
+    "tagline": "محاضرات إسلامية صوتية"
+  },
+  "nav": {
+    "home": "الرئيسية",
+    "library": "المكتبة",
+    "search": "البحث",
+    "settings": "الإعدادات",
+    "downloads": "التنزيلات"
+  },
+  "home": {
+    "welcome": "مرحباً",
+    "featured": "المجموعات المميزة",
+    "recentlyPlayed": "المستمع إليها مؤخراً",
+    "continueListening": "متابعة الاستماع",
+    "browseAll": "تصفح الكل",
+    "noRecent": "لا توجد محاضرات مستمع إليها مؤخراً"
+  },
+  "library": {
+    "title": "المكتبة",
+    "collections": "المجموعات",
+    "categories": "التصنيفات",
+    "scholars": "العلماء",
+    "downloaded": "المحملة",
+    "bookmarks": "الإشارات المرجعية",
+    "noCollections": "لا توجد مجموعات متاحة",
+    "noDownloads": "لا توجد محاضرات محملة"
+  },
+  "collection": {
+    "lectures": "{count} محاضرة",
+    "duration": "{duration}",
+    "scholar": "العالم",
+    "category": "التصنيف",
+    "downloadAll": "تحميل الكل",
+    "playAll": "تشغيل الكل"
+  },
+  "lecture": {
+    "nowPlaying": "قيد التشغيل",
+    "upNext": "التالي",
+    "addToQueue": "إضافة إلى قائمة الانتظار",
+    "download": "تحميل",
+    "downloading": "جاري التحميل...",
+    "downloaded": "تم التحميل",
+    "bookmark": "إشارة مرجعية",
+    "share": "مشاركة",
+    "removeDownload": "حذف التحميل"
+  },
+  "player": {
+    "play": "تشغيل",
+    "pause": "إيقاف مؤقت",
+    "skipForward": "تقديم",
+    "skipBackward": "ترجيع",
+    "previous": "السابق",
+    "next": "التالي",
+    "speed": "السرعة",
+    "volume": "الصوت",
+    "mute": "كتم",
+    "unmute": "إلغاء الكتم",
+    "queue": "قائمة الانتظار",
+    "repeat": "تكرار",
+    "repeatOne": "تكرار واحد",
+    "repeatAll": "تكرار الكل",
+    "shuffle": "عشوائي",
+    "sleepTimer": "مؤقت النوم",
+    "resumeFrom": "متابعة من {time}؟",
+    "resume": "متابعة",
+    "startOver": "البدء من جديد"
+  },
+  "search": {
+    "title": "البحث",
+    "placeholder": "البحث في المحاضرات والعلماء...",
+    "noResults": "لا توجد نتائج",
+    "recentSearches": "عمليات البحث الأخيرة"
+  },
+  "settings": {
+    "title": "الإعدادات",
+    "language": "اللغة",
+    "theme": "المظهر",
+    "dark": "داكن",
+    "light": "فاتح",
+    "system": "النظام",
+    "playback": "التشغيل",
+    "playbackSpeed": "سرعة التشغيل",
+    "skipDuration": "مدة التخطي",
+    "autoPlay": "التشغيل التلقائي",
+    "storage": "التخزين",
+    "storageUsed": "المساحة المستخدمة",
+    "clearCache": "مسح ذاكرة التخزين المؤقت",
+    "clearData": "مسح جميع البيانات",
+    "about": "حول",
+    "version": "الإصدار",
+    "credits": "الاعتمادات"
+  },
+  "download": {
+    "title": "التنزيلات",
+    "inProgress": "قيد التحميل",
+    "completed": "مكتمل",
+    "failed": "فشل",
+    "pause": "إيقاف مؤقت",
+    "resume": "متابعة",
+    "retry": "إعادة المحاولة",
+    "cancel": "إلغاء",
+    "pauseAll": "إيقاف الكل",
+    "resumeAll": "متابعة الكل",
+    "clearCompleted": "مسح المكتمل",
+    "storageWarning": "مساحة التخزين منخفضة. قد تفشل بعض التنزيلات.",
+    "noSpace": "مساحة تخزين غير كافية"
+  },
+  "errors": {
+    "loadFailed": "فشل في تحميل المحتوى",
+    "networkError": "خطأ في الشبكة. يرجى التحقق من اتصالك.",
+    "playbackError": "خطأ في التشغيل. يرجى المحاولة مرة أخرى.",
+    "downloadError": "فشل التحميل. يرجى المحاولة مرة أخرى.",
+    "retry": "إعادة المحاولة"
+  },
+  "common": {
+    "loading": "جاري التحميل...",
+    "cancel": "إلغاء",
+    "confirm": "تأكيد",
+    "delete": "حذف",
+    "save": "حفظ",
+    "close": "إغلاق",
+    "back": "رجوع",
+    "more": "المزيد",
+    "less": "أقل",
+    "all": "الكل",
+    "none": "لا شيء",
+    "yes": "نعم",
+    "no": "لا",
+    "ok": "حسناً"
+  },
+  "time": {
+    "justNow": "الآن",
+    "minutesAgo": "منذ {count} دقيقة",
+    "hoursAgo": "منذ {count} ساعة",
+    "daysAgo": "منذ {count} يوم",
+    "hours": "س",
+    "minutes": "د",
+    "seconds": "ث"
+  },
+  "offline": {
+    "title": "أنت غير متصل",
+    "message": "قد لا يكون بعض المحتوى متاحاً. المحاضرات المحملة لا تزال قابلة للوصول."
+  }
+}

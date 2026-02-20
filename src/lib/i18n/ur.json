@@ -1,0 +1,154 @@
+{
+  "app": {
+    "name": "درس نوربخشیہ",
+    "tagline": "اسلامی آڈیو لیکچرز"
+  },
+  "nav": {
+    "home": "ہوم",
+    "library": "لائبریری",
+    "search": "تلاش",
+    "settings": "ترتیبات",
+    "downloads": "ڈاؤن لوڈز"
+  },
+  "home": {
+    "welcome": "خوش آمدید",
+    "featured": "نمایاں مجموعے",
+    "recentlyPlayed": "حال ہی میں سنے گئے",
+    "continueListening": "سننا جاری رکھیں",
+    "browseAll": "سب دیکھیں",
+    "noRecent": "کوئی حالیہ لیکچر نہیں"
+  },
+  "library": {
+    "title": "لائبریری",
+    "collections": "مجموعے",
+    "categories": "زمرے",
+    "scholars": "علماء",
+    "downloaded": "ڈاؤن لوڈ شدہ",
+    "bookmarks": "بک مارکس",
+    "noCollections": "کوئی مجموعہ دستیاب نہیں",
+    "noCollectionsInCategory": "اس زمرے میں کوئی مجموعہ نہیں",
+    "noDownloads": "کوئی ڈاؤن لوڈ شدہ لیکچر نہیں",
+    "filterBy": "فلٹر",
+    "showAll": "تمام مجموعے دکھائیں"
+  },
+  "collection": {
+    "lectures": "{count} لیکچرز",
+    "lecture": "1 لیکچر",
+    "topics": "{count} موضوعات",
+    "topic": "1 موضوع",
+    "noTopics": "کوئی موضوع نہیں",
+    "duration": "{duration}",
+    "scholar": "عالم",
+    "category": "زمرہ",
+    "downloadAll": "سب ڈاؤن لوڈ کریں",
+    "playAll": "سب چلائیں"
+  },
+  "lecture": {
+    "nowPlaying": "ابھی چل رہا ہے",
+    "upNext": "اگلا",
+    "addToQueue": "قطار میں شامل کریں",
+    "download": "ڈاؤن لوڈ",
+    "downloading": "ڈاؤن لوڈ ہو رہا ہے...",
+    "downloaded": "ڈاؤن لوڈ شدہ",
+    "bookmark": "بک مارک",
+    "share": "شیئر کریں",
+    "removeDownload": "ڈاؤن لوڈ ہٹائیں"
+  },
+  "player": {
+    "play": "چلائیں",
+    "pause": "روکیں",
+    "skipForward": "آگے جائیں",
+    "skipBackward": "پیچھے جائیں",
+    "previous": "پچھلا",
+    "next": "اگلا",
+    "speed": "رفتار",
+    "volume": "آواز",
+    "mute": "خاموش",
+    "unmute": "آواز چالو",
+    "queue": "قطار",
+    "repeat": "دہرائیں",
+    "repeatOne": "ایک دہرائیں",
+    "repeatAll": "سب دہرائیں",
+    "shuffle": "شفل",
+    "sleepTimer": "سونے کا ٹائمر",
+    "resumeFrom": "{time} سے جاری رکھیں؟",
+    "resume": "جاری رکھیں",
+    "startOver": "شروع سے"
+  },
+  "search": {
+    "title": "تلاش",
+    "placeholder": "لیکچرز، علماء تلاش کریں...",
+    "noResults": "کوئی نتیجہ نہیں ملا",
+    "recentSearches": "حالیہ تلاش"
+  },
+  "settings": {
+    "title": "ترتیبات",
+    "language": "زبان",
+    "theme": "تھیم",
+    "dark": "ڈارک",
+    "light": "لائٹ",
+    "system": "سسٹم",
+    "playback": "پلے بیک",
+    "playbackSpeed": "پلے بیک رفتار",
+    "skipDuration": "سکپ کا دورانیہ",
+    "autoPlay": "خود کار اگلا چلائیں",
+    "storage": "سٹوریج",
+    "storageUsed": "استعمال شدہ سٹوریج",
+    "clearCache": "کیش صاف کریں",
+    "clearData": "تمام ڈیٹا صاف کریں",
+    "about": "تعارف",
+    "version": "ورژن",
+    "credits": "کریڈٹس"
+  },
+  "download": {
+    "title": "ڈاؤن لوڈز",
+    "inProgress": "جاری ہے",
+    "completed": "مکمل",
+    "failed": "ناکام",
+    "pause": "روکیں",
+    "resume": "جاری رکھیں",
+    "retry": "دوبارہ کوشش",
+    "cancel": "منسوخ",
+    "pauseAll": "سب روکیں",
+    "resumeAll": "سب جاری رکھیں",
+    "clearCompleted": "مکمل صاف کریں",
+    "storageWarning": "سٹوریج کم ہے۔ کچھ ڈاؤن لوڈز ناکام ہو سکتی ہیں۔",
+    "noSpace": "ناکافی سٹوریج"
+  },
+  "errors": {
+    "loadFailed": "مواد لوڈ کرنے میں ناکام",
+    "networkError": "نیٹ ورک خرابی۔ براہ کرم اپنا کنکشن چیک کریں۔",
+    "playbackError": "پلے بیک میں خرابی۔ براہ کرم دوبارہ کوشش کریں۔",
+    "downloadError": "ڈاؤن لوڈ ناکام۔ براہ کرم دوبارہ کوشش کریں۔",
+    "retry": "دوبارہ کوشش"
+  },
+  "common": {
+    "loading": "لوڈ ہو رہا ہے...",
+    "cancel": "منسوخ",
+    "confirm": "تصدیق",
+    "delete": "حذف کریں",
+    "save": "محفوظ کریں",
+    "close": "بند کریں",
+    "back": "واپس",
+    "more": "مزید",
+    "less": "کم",
+    "all": "سب",
+    "none": "کوئی نہیں",
+    "yes": "ہاں",
+    "no": "نہیں",
+    "ok": "ٹھیک ہے"
+  },
+  "time": {
+    "justNow": "ابھی",
+    "minutesAgo": "{count} منٹ پہلے",
+    "hoursAgo": "{count} گھنٹے پہلے",
+    "daysAgo": "{count} دن پہلے",
+    "hours": "گھنٹے",
+    "minutes": "منٹ",
+    "seconds": "سیکنڈ"
+  },
+  "offline": {
+    "title": "آپ آف لائن ہیں",
+    "message": "کچھ مواد دستیاب نہیں ہو سکتا۔ ڈاؤن لوڈ شدہ لیکچرز ابھی بھی قابل رسائی ہیں۔"
+  }
+}

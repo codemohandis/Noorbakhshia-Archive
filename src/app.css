@@ -1,0 +1,296 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Custom Properties for theming */
+:root {
+  /* Dark mode (default) */
+  --color-bg: #0D1117;
+  --color-surface: #161B22;
+  --color-border: #30363D;
+  --color-primary: #1E6853;
+  --color-secondary: #C9A227;
+  --color-text: #E6EDF3;
+  --color-text-muted: #8B949E;
+
+  /* Typography */
+  --font-primary: 'Inter', system-ui, sans-serif;
+  --font-rtl: 'Jameel Noori Nastaleeq', 'Noto Nastaliq Urdu', serif;
+  --font-arabic: 'Amiri', 'Noto Naskh Arabic', serif;
+
+  /* Spacing */
+  --player-height: 60px;
+  --nav-height: 64px;
+  --safe-area-bottom: env(safe-area-inset-bottom, 0px);
+
+  /* Category accent colors */
+  --accent-fiqh: #1E6853;
+  --accent-aqaid: #6366F1;
+  --accent-prayers: #EC4899;
+}
+
+/* Light mode */
+html:not(.dark) {
+  --color-bg: #F0FDF9;
+  --color-surface: rgba(255, 255, 255, 0.8);
+  --color-border: rgba(30, 104, 83, 0.1);
+  --color-text: #1F2328;
+  --color-text-muted: #57606A;
+}
+
+/* RTL support */
+html[dir="rtl"] {
+  --font-primary: var(--font-rtl);
+}
+
+html[lang="ar"] {
+  --font-primary: var(--font-arabic);
+}
+
+/* Base styles */
+@layer base {
+  body {
+    font-family: var(--font-primary);
+    min-height: 100vh;
+    min-height: 100dvh;
+    overflow-x: hidden;
+  }
+
+  /* Smooth transitions for theme changes */
+  * {
+    transition-property: background-color, border-color, color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  /* Disable transitions on page load */
+  .no-transitions * {
+    transition: none !important;
+  }
+}
+
+/* Component styles */
+@layer components {
+  /* Glassmorphism card */
+  .card {
+    @apply rounded-xl p-4;
+    @apply transition-all duration-300 ease-out;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  }
+
+  html:not(.dark) .card {
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(30, 104, 83, 0.1);
+  }
+
+  /* Card with accent border */
+  .card-accent {
+    @apply card;
+    border-left: 4px solid var(--accent-color, var(--color-primary));
+  }
+
+  /* Category-specific accent colors */
+  .card-accent-fiqh { --accent-color: #1E6853; }
+  .card-accent-aqaid { --accent-color: #6366F1; }
+  .card-accent-prayers { --accent-color: #EC4899; }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2;
+    @apply font-medium transition-all duration-200;
+    @apply active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary text-white hover:bg-primary-600;
+  }
+
+  .btn-secondary {
+    @apply btn bg-secondary text-dark-bg hover:bg-secondary-400;
+  }
+
+  .btn-ghost {
+    @apply btn bg-transparent hover:bg-dark-surface;
+  }
+
+  html:not(.dark) .btn-ghost {
+    @apply hover:bg-gray-100;
+  }
+
+  /* Player progress bar */
+  .progress-bar {
+    @apply h-1 bg-dark-border rounded-full overflow-hidden;
+  }
+
+  .progress-bar-fill {
+    @apply h-full bg-primary transition-all duration-100;
+  }
+
+  /* Audio waveform visualization */
+  .waveform {
+    @apply flex items-end gap-[2px] h-8;
+  }
+
+  .waveform-bar {
+    @apply w-1 bg-primary/30 rounded-full transition-all duration-100;
+  }
+
+  .waveform-bar.active {
+    @apply bg-primary;
+  }
+
+  /* Skeleton loading */
+  .skeleton {
+    @apply bg-dark-border animate-pulse rounded;
+  }
+
+  html:not(.dark) .skeleton {
+    @apply bg-gray-200;
+  }
+
+  /* Mini player slide-up animation */
+  .mini-player-enter {
+    animation: slideUp 0.3s ease-out forwards;
+  }
+
+  /* Full player overlay */
+  .full-player-enter {
+    animation: fadeIn 0.3s ease-out forwards;
+  }
+}
+
+/* Utility styles */
+@layer utilities {
+  /* Gradient background */
+  .bg-gradient-main {
+    background: linear-gradient(135deg, #1E6853 0%, #134e3f 50%, #0D3D30 100%);
+  }
+
+  html:not(.dark) .bg-gradient-main {
+    background: linear-gradient(135deg, #E8F5F1 0%, #D1EBE3 50%, #F0FDF9 100%);
+  }
+
+  /* Safe area padding for mobile */
+  .pb-safe {
+    padding-bottom: max(var(--safe-area-bottom), 1rem);
+  }
+
+  .mb-player {
+    margin-bottom: calc(var(--player-height) + var(--safe-area-bottom));
+  }
+
+  /* Text direction helpers */
+  .text-start {
+    text-align: start;
+  }
+
+  .text-end {
+    text-align: end;
+  }
+
+  /* Hide scrollbar but keep functionality */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Touch feedback */
+  .touch-feedback {
+    @apply active:scale-[0.98] transition-transform duration-100;
+  }
+
+  /* Gradient text */
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
+  }
+
+  /* Blur backdrop */
+  .backdrop-blur-strong {
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+  }
+}
+
+/* Animations */
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 0.8;
+  }
+}
+
+/* Focus styles for accessibility */
+:focus-visible {
+  @apply outline-2 outline-offset-2 outline-primary;
+}
+
+/* Selection colors */
+::selection {
+  @apply bg-primary/30;
+}
+
+/* Scrollbar styling for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-dark-border rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-text-secondary;
+}
+
+html:not(.dark)::-webkit-scrollbar-thumb {
+  @apply bg-gray-300;
+}
+
+html:not(.dark)::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400;
+}

@@ -1,0 +1,660 @@
+{
+  "collections": [
+    {
+      "identifier": "00-almuqaddimah-lecture-series",
+      "title": "00: Al-Muqaddimah",
+      "displayName": "المقدمہ",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Al-Muqaddimah"],
+      "featured": true
+    },
+    {
+      "identifier": "01-babaltaharah-lecture-series",
+      "title": "01: Bāb_al-Ṭahārah",
+      "displayName": "باب الطہارۃ",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Taharah"],
+      "featured": true
+    },
+    {
+      "identifier": "02-babalsalah-lecture-series",
+      "title": "02: Bāb_al-Ṣalāh",
+      "displayName": "باب الصلوۃ",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Salah"],
+      "featured": true
+    },
+    {
+      "identifier": "03-babalzakah-lecture-series",
+      "title": "03: Bāb_al-Zakāh",
+      "displayName": "باب الزکوٰۃ",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Zakah"],
+      "featured": true
+    },
+    {
+      "identifier": "04-babalsawm-lecture-series",
+      "title": "04: Bāb_al-Ṣawm",
+      "displayName": "باب الصوم",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Sawm"]
+    },
+    {
+      "identifier": "05-babalitikaf-lecture-series",
+      "title": "05: Bāb_al-Iʿtikāf",
+      "displayName": "باب الاعتکاف",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Itikaf"]
+    },
+    {
+      "identifier": "06-babalhajj-lecture-series",
+      "title": "06: Bāb_al-Ḥajj",
+      "displayName": "باب الحج",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Hajj"]
+    },
+    {
+      "identifier": "07-babaljihad-lecture-series",
+      "title": "07: Bāb_al-Jihād",
+      "displayName": "باب الجہاد",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Jihad"]
+    },
+    {
+      "identifier": "08-babalamrbilmarufwalnahyanalmunkar-lecture-series",
+      "title": "08: Bāb_al-Amr_bi-l-Maʿrūf_wa-l-Nahy_ʿan_al-Munkar",
+      "displayName": "باب الامر بالمعروف و النہی عن المنکر",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Amr bil Maruf"]
+    },
+    {
+      "identifier": "09-babalnikah-lecture-series",
+      "title": "09: Bāb_al-Nikāḥ",
+      "displayName": "باب النکاح",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Nikah"]
+    },
+    {
+      "identifier": "10-babaltalaq-lecture-series",
+      "title": "10: Bāb_al-Ṭalāq",
+      "displayName": "باب الطلاق",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Talaq"]
+    },
+    {
+      "identifier": "11-babalzihar-lecture-series",
+      "title": "11: Bāb_al-Ẓihār",
+      "displayName": "باب الظہار",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Zihar"]
+    },
+    {
+      "identifier": "12-babalila-lecture-series",
+      "title": "12: Bāb_al-Īlāʾ",
+      "displayName": "باب الایلاء",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Ila"]
+    },
+    {
+      "identifier": "13-baballian-lecture-series",
+      "title": "13: Bāb_al-Liʿān",
+      "displayName": "باب اللعان",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Lian"]
+    },
+    {
+      "identifier": "14-babalitaq-lecture-series",
+      "title": "14: Bāb_al-ʿItāq",
+      "displayName": "باب العتق",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Itaq"]
+    },
+    {
+      "identifier": "15-babaltadbir-lecture-series",
+      "title": "15: Bāb_al-Tadbīr",
+      "displayName": "باب التدبیر",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Tadbir"]
+    },
+    {
+      "identifier": "16-babalmukatabah-lecture-series",
+      "title": "16: Bāb_al-Mukātabah",
+      "displayName": "باب المکاتبہ",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Mukatabah"]
+    },
+    {
+      "identifier": "17-babalaymanwalnudhurwaluhud-lecture-series",
+      "title": "17: Bāb_al-Aymān_wa-l-Nudhūr_wa-l-ʿUhūd",
+      "displayName": "باب الایمان و النذور و العہود",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Ayman"]
+    },
+    {
+      "identifier": "18-babalhudud-lecture-series",
+      "title": "18: Bāb_al-Ḥudūd",
+      "displayName": "باب الحدود",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Hudud"]
+    },
+    {
+      "identifier": "19-babhaddalqadhf-lecture-series",
+      "title": "19: Bāb_Ḥadd_al-Qadhf",
+      "displayName": "باب حد القذف",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Qadhf"]
+    },
+    {
+      "identifier": "20-babhaddalsariqah-lecture-series",
+      "title": "20: Bāb_Ḥadd_al-Sariqah",
+      "displayName": "باب حد السرقہ",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Sariqah"]
+    },
+    {
+      "identifier": "21-babfisharbialkhamr-lecture-series",
+      "title": "21: Bāb_fī_Sharbi_al-Khamr",
+      "displayName": "باب فی شرب الخمر",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Khamr"]
+    },
+    {
+      "identifier": "22-babalmurtadd-lecture-series",
+      "title": "22: Bāb_al-Murtadd",
+      "displayName": "باب المرتد",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Murtadd"]
+    },
+    {
+      "identifier": "23-babalqisas-lecture-series",
+      "title": "23: Bāb_al-Qiṣāṣ",
+      "displayName": "باب القصاص",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Qisas"]
+    },
+    {
+      "identifier": "24-babaltijarah-lecture-series",
+      "title": "24: Bāb_al-Tijārah",
+      "displayName": "باب التجارۃ",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Tijarah"]
+    },
+    {
+      "identifier": "25-babalqard-lecture-series",
+      "title": "25: Bāb_al-Qarḍ",
+      "displayName": "باب القرض",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Qard"]
+    },
+    {
+      "identifier": "26-babalhajr-lecture-series",
+      "title": "26: Bāb_al-Ḥajr",
+      "displayName": "باب الحجر",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Hajr"]
+    },
+    {
+      "identifier": "27-babaldamanwalkafalah-lecture-series",
+      "title": "27: Bāb_al-Ḍamān_wa-l-Kafālah",
+      "displayName": "باب الضمان و الکفالۃ",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Daman"]
+    },
+    {
+      "identifier": "28-babalsulh-lecture-series",
+      "title": "28: Bāb_al-Ṣulḥ",
+      "displayName": "باب الصلح",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Sulh"]
+    },
+    {
+      "identifier": "29-babalwadiah-lecture-series",
+      "title": "29: Bāb_al-Wadīʿah",
+      "displayName": "باب الودیعہ",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Wadiah"]
+    },
+    {
+      "identifier": "30-babalariyah-lecture-series",
+      "title": "30: Bāb_al-ʿĀriyah",
+      "displayName": "باب العاریہ",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Ariyah"]
+    },
+    {
+      "identifier": "31-baballuqtahwallaqit-lecture-series",
+      "title": "31: Bāb_al-Luqṭah_wa-l-Laqīṭ",
+      "displayName": "باب اللقطہ و اللقیط",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Luqtah"]
+    },
+    {
+      "identifier": "32-babaldallah-lecture-series",
+      "title": "32: Bāb_al-Ḍāllah",
+      "displayName": "باب الضالہ",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Dallah"]
+    },
+    {
+      "identifier": "33-baballuqtah-lecture-series",
+      "title": "33: Bāb_al-Luqṭah",
+      "displayName": "باب اللقطہ",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Luqtah"]
+    },
+    {
+      "identifier": "34-babaljialah-lecture-series",
+      "title": "34: Bāb_al-Jiʿālah",
+      "displayName": "باب الجعالہ",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Jialah"]
+    },
+    {
+      "identifier": "35-babalghasb-lecture-series",
+      "title": "35: Bāb_al-Ghaṣb",
+      "displayName": "باب الغصب",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Ghasb"]
+    },
+    {
+      "identifier": "36-babraddalmazalim-lecture-series",
+      "title": "36: Bāb_Radd_al-Maẓālim",
+      "displayName": "باب رد المظالم",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Mazalim"]
+    },
+    {
+      "identifier": "37-babalmafqud-lecture-series",
+      "title": "37: Bāb_al-Mafqūd",
+      "displayName": "باب المفقود",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Mafqud"]
+    },
+    {
+      "identifier": "38-babalshirkah-lecture-series",
+      "title": "38: Bāb_al-Shirkah",
+      "displayName": "باب الشرکۃ",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Shirkah"]
+    },
+    {
+      "identifier": "39-babalqirad-lecture-series",
+      "title": "39: Bāb_al-Qirāḍ",
+      "displayName": "باب القراض",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Qirad"]
+    },
+    {
+      "identifier": "40-babalmuzaraah-lecture-series",
+      "title": "40: Bāb_al-Muzāraʿah",
+      "displayName": "باب المزارعہ",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Muzaraah"]
+    },
+    {
+      "identifier": "41-babalmusaqah-lecture-series",
+      "title": "41: Bāb_al-Musāqāh",
+      "displayName": "باب المساقاۃ",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Musaqah"]
+    },
+    {
+      "identifier": "42-babalijarah-lecture-series",
+      "title": "42: Bāb_al-Ijārah",
+      "displayName": "باب الاجارۃ",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Ijarah"]
+    },
+    {
+      "identifier": "43-babalshufah-lecture-series",
+      "title": "43: Bāb_al-Shufʿah",
+      "displayName": "باب الشفعہ",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Shufah"]
+    },
+    {
+      "identifier": "44-babihyaalmawat-lecture-series",
+      "title": "44: Bāb_Iḥyāʾ_al-Mawāt",
+      "displayName": "باب احیاء الموات",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Ihya al-Mawat"]
+    },
+    {
+      "identifier": "45-babalwikalah-lecture-series",
+      "title": "45: Bāb_al-Wikālah",
+      "displayName": "باب الوکالۃ",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Wikalah"]
+    },
+    {
+      "identifier": "46-babalwaqfwalsadaqat-lecture-series",
+      "title": "46: Bāb_al-Waqf_wa-l-Ṣadaqāt",
+      "displayName": "باب الوقف و الصدقات",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Waqf"]
+    },
+    {
+      "identifier": "47-babalsadaqah-lecture-series",
+      "title": "47: Bāb_al-Ṣadaqah",
+      "displayName": "باب الصدقہ",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Sadaqah"]
+    },
+    {
+      "identifier": "48-babalsukna-lecture-series",
+      "title": "48: Bāb_al-Suknā",
+      "displayName": "باب السکنی",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Sukna"]
+    },
+    {
+      "identifier": "49-babalhibah-lecture-series",
+      "title": "49: Bāb_al-Hibah",
+      "displayName": "باب الھبۃ",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Hibah"]
+    },
+    {
+      "identifier": "50-babalsabqwalramayah-lecture-series",
+      "title": "50: Bāb_al-Sabq_wa-l-Ramāyah",
+      "displayName": "باب السبق و الرمایہ",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Sabq"]
+    },
+    {
+      "identifier": "51-babalfaraid-lecture-series",
+      "title": "51: Bāb_al-Farāʾiḍ",
+      "displayName": "باب الفرائض",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Faraid"]
+    },
+    {
+      "identifier": "52-babalsaham-lecture-series",
+      "title": "52: Bāb_al-Sahām",
+      "displayName": "باب السہام",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Saham"]
+    },
+    {
+      "identifier": "53-babalhujubanalirth-lecture-series",
+      "title": "53: Bāb_al-Ḥujūb_ʿan_al-irth",
+      "displayName": "باب الحجب عن الارث",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Law", "Hujub"]
+    },
+    {
+      "identifier": "aqaid-noorbakhshia-qa-series",
+      "title": "Aqaid Noorbakhshia Q&A Series",
+      "displayName": "عقائد نوربخشیہ سوال و جواب",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Aqaid Noorbakhshia",
+      "genre": "Noorbakhshia Jurisprudence",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Aqeedah", "Noorbakhshi Beliefs"],
+      "featured": true
+    },
+    {
+      "identifier": "mustahab-prayers-lecture-series",
+      "title": "Mustahab Prayers Lecture Series",
+      "displayName": "مستحب نمازیں",
+      "creator": "Shah Syed Muhammad Noorbakhsh",
+      "contributor": "Sheikh Mohammad Mohsin Ishraqi",
+      "album": "Mustahab Prayers Lecture Series",
+      "genre": "Mustahab Prayers",
+      "language": "urdu",
+      "subject": ["Noorbakhshia Fiqh", "Noorbakhshi Prayers"],
+      "featured": true
+    }
+  ],
+  "genres": [
+    {
+      "id": "Noorbakhshi Lecture",
+      "name": "نوربخشی لیکچر",
+      "nameEn": "Noorbakhshi Lecture",
+      "icon": "Headphones"
+    },
+    {
+      "id": "Mustahab Prayers",
+      "name": "مستحب نمازیں",
+      "nameEn": "Mustahab Prayers",
+      "icon": "Heart"
+    }
+  ],
+  "albums": [
+    {
+      "id": "fiqh-al-ahwat",
+      "name": "الفقہ الاحوط",
+      "nameEn": "Al-Fiqh ul-Ahwat Lectures - Urdu ",
+      "icon": "Scale"
+    },
+    {
+      "id": "aqaid",
+      "name": "عقائد نوربخشیہ",
+      "nameEn": "Aqaid Noorbakhshia",
+      "icon": "BookOpen"
+    },
+    {
+      "id": "mustahab-prayers",
+      "name": "مستحب نمازیں",
+      "nameEn": "Mustahab Prayers Lecture Series",
+      "icon": "Heart"
+    }
+  ]
+}
