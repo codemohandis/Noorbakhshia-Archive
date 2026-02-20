@@ -54,7 +54,9 @@
                 class="w-14 h-14 rounded-full flex items-center justify-center flex-shrink-0"
                 style="background-color: {theme.bgColor}"
               >
-                <Icon name={theme.icon} size={28} style="color: {theme.color}" />
+                <div style="color: {theme.color}">
+                  <Icon name={theme.icon as any} size={28} />
+                </div>
               </div>
               <div class="flex-1 min-w-0">
                 <h3 class="font-bold text-lg mb-1">{category.nameEn}</h3>

@@ -12,7 +12,7 @@
   import { categoryEngine } from '$lib/services/category-engine';
   import type { Collection, Lecture } from '$lib/types';
 
-  const collectionId = $derived($page.params.id);
+  const collectionId = $derived($page.params.id || '');
 
   let collection = $state<Collection | undefined>();
   let lectures = $state<Lecture[]>([]);
@@ -21,8 +21,8 @@
 
   onMount(async () => {
     try {
-      collection = await library.getCollection(collectionId);
-      lectures = await library.getLectures(collectionId);
+      collection = await library.getCollection(collectionId || '');
+      lectures = await library.getLectures(collectionId || '');
     } catch (e) {
       error = e instanceof Error ? e.message : 'Failed to load collection';
     } finally {

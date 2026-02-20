@@ -9,7 +9,7 @@
   import { tr } from '$lib/services/language-engine';
   import { metadataNormalizer } from '$lib/services/metadata-normalizer';
 
-  const categoryId = $derived($page.params.id);
+  const categoryId = $derived($page.params.id || '');
 
   // Get the album/category info
   const category = $derived(collectionManager.getAlbum(categoryId));

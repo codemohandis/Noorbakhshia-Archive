@@ -52,7 +52,9 @@
       "Bash(start http://localhost:5174)",
       "Bash(powershell -Command \"Get-ChildItem -Path src -Filter ''*.svelte'' -Recurse | ForEach-Object { \\(Get-Content $_FullName -Raw\\) -replace '':no$tr\\\\\\('', '':not\\('' | Set-Content $_FullName -NoNewline }\")",
       "WebFetch(domain:localhost)",
-      "WebFetch(domain:dars.noorbakhshia.com)"
+      "WebFetch(domain:dars.noorbakhshia.com)",
+      "Bash(git branch:*)",
+      "Bash(npm run check:*)"
     ]
   }
 }

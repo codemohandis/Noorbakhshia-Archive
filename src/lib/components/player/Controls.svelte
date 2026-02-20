@@ -52,7 +52,7 @@
 
   <!-- Next -->
   <button
-    onclick={() => player.playNex$tr()}
+    onclick={() => player.playNext()}
     class="p-3 rounded-full hover:bg-dark-surface transition-colors"
     aria-label={$tr('player.next')}
   >

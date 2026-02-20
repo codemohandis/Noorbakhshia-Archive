@@ -10,7 +10,7 @@
   import { tr } from '$lib/services/language-engine';
   import type { Lecture } from '$lib/types';
 
-  const lectureId = $derived(decodeURIComponent($page.params.id));
+  const lectureId = $derived(decodeURIComponent($page.params.id || ''));
 
   let lecture = $state<Lecture | undefined>();
   let isLoading = $state(true);
